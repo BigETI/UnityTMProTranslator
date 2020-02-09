@@ -1,0 +1,21 @@
+{
+    "name": "com.bigeti.translator.textmeshpro",
+    "version": "1.0.0",
+    "displayName": "Unity Text Mesh Pro Translator",
+    "description": "This package is an extension to the Unity Translator package at https://github.com/BigETI/UnityTranslator.\nIt contains a script to translate a game object with a Text Mesh Pro UGUI component.",
+    "dependencies": {
+        "https://github.com/BigETI/UnityTranslator.git": "1.0.0"
+    },
+    "keywords": [
+        "translator",
+        "tmpro",
+        "textmeshpro",
+        "translatortmpro",
+        "translatortextmeshpro"
+    ],
+    "author": {
+        "name": "Ethem Kurt",
+        "email": "bigeti.ethem@gmail.com",
+        "url": "https://bigeti.de/"
+    }
+}
