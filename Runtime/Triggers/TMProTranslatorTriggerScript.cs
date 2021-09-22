@@ -1,6 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityTranslator;
+using UnityTranslator.Triggers;
 
 /// <summary>
 /// Unity TMPro translator triggers namespace
@@ -8,16 +8,16 @@ using UnityTranslator;
 namespace UnityTMProTranslator.Triggers
 {
     /// <summary>
-    /// TMPro Translator trigger script class
+    /// A class that describes a TextMesh Pro translator trigger script
     /// </summary>
     [RequireComponent(typeof(TextMeshProUGUI))]
-    public class TMProTranslatorTriggerScript : ATextTranslatorTriggerScript
+    public class TMProTranslatorTriggerScript : ATextTranslatorTriggerScript, ITMProTranslatorTrigger
     {
         /// <summary>
-        /// Update text
+        /// Updates string
         /// </summary>
-        /// <param name="text">Text</param>
-        protected override void UpdateString(string text)
+        /// <param name="stringValue">String</param>
+        protected override void UpdateString(string stringValue)
         {
             TextMeshProUGUI text_component = GetComponent<TextMeshProUGUI>();
             if (text_component != null)
